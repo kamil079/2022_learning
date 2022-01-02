@@ -1,0 +1,46 @@
+.grid {
+    width: 800px;
+    height: 800px;
+
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "one one two two"
+        "one one three four"
+        "five six eight eight"
+        "seven six eight eight";
+}
+
+.el1 {
+    grid-area: one;
+    background: blue;
+}
+
+.el2 {
+    grid-area: two;
+    background: blue;
+}
+.el3 {
+    grid-area: three;
+    background: green;
+}
+.el4 {
+    grid-area: four;
+    background: orange;
+}
+.el5 {
+    grid-area: five;
+    background: yellow;
+}
+.el6 {
+    grid-area: six;
+    background: orangered;
+}
+.el7 {
+    grid-area: seven;
+    background: red;
+}
+.el8 {
+    grid-area: eight;
+    background: purple;
+}

@@ -46,4 +46,103 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
+
+.layout {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "header" "menu" "content";
+}
+
+.page-header {
+  height: 200px;
+  background: orangered;
+  color: #fff;
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-menu {
+  width: 100%;
+  background: lightgrey;
+  grid-area: menu;
+}
+.main-menu ul {
+  list-style: none;
+}
+.main-menu ul li {
+  padding: 5px;
+}
+
+.main-content {
+  margin: 3rem;
+  grid-area: content;
+}
+
+@media (min-width: 768px) {
+  .layout {
+    grid-template-areas: "header header" "content menu";
+  }
+
+  .page-header {
+    grid-area: header;
+  }
+
+  .main-menu {
+    grid-area: menu;
+  }
+
+  .main-content {
+    grid-area: content;
+  }
+}
+.grid {
+  width: 800px;
+  height: 800px;
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "one one two two" "one one three four" "five six eight eight" "seven six eight eight";
+}
+
+.el1 {
+  grid-area: one;
+  background: blue;
+}
+
+.el2 {
+  grid-area: two;
+  background: blue;
+}
+
+.el3 {
+  grid-area: three;
+  background: green;
+}
+
+.el4 {
+  grid-area: four;
+  background: orange;
+}
+
+.el5 {
+  grid-area: five;
+  background: yellow;
+}
+
+.el6 {
+  grid-area: six;
+  background: orangered;
+}
+
+.el7 {
+  grid-area: seven;
+  background: red;
+}
+
+.el8 {
+  grid-area: eight;
+  background: purple;
+}
 /*# sourceMappingURL=main.css.map */
